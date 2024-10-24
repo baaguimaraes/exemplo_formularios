@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemplos de Formularios</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+       <form method="POST" action="recebe_dados.html">
+        <div>
+            <label for="tx-usuario">Usuário: </label>
+            <input type="text" name="usuario" id="tx-usuario">
+      </div>
+      <div>
+            <label for="tx-senha">Senha:</label>
+            <input type="password" name="senha" id="tx-senha">
+    </div>
+    <div>
+        <label for="tx-email">Email:</label>
+        <input type="text" name="Email" id="tx-email">
+    </div>
+    <div>
+        <label for="tx-mensage">Mensagem</label><br>
+        <textarea name="mensagem" id="tx-mensage" rows="5" cols="50"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        <input type="button" value="Clique aqui">
+    </div>
+    <div>
+        <label>Selecione estado:</label>
+        <select name="estado" id="se-estado">
+            <option value="AL">Alagoas</option>
+            <option value="SP">São Paulo</option>
+        </select>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Sexo:</legend>
+            <input type="radio" name="sexo" id="ra-masculino" value="M"> <label for="ra-masculino">Masculino</label>
+            <input type="radio" name="sexo" id="ra-feminino" value="F" checked> <label for="ra-feminino">Masculino</label>
+        </fieldset>
+    </div>
+    <div>
+        <button type="enviar" value="enviar">ENVIAR</button>
+        <button type="reset" value="Limpar">Limpar</button>
+        <button type="button" value="clicar">CLICAR</button>
+    </div>
+       </form>
+    </body>
+</html>
